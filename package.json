@@ -1,0 +1,16 @@
+{
+  "name": "OpenSecrets-JS",
+  "version": "0.1.1",
+  "contributors": [{
+    "name": "Pete Mertz",
+    "email": "peter.s.mertz@gmail.com"
+  }],
+  "main": "./lib/opensecrets.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
