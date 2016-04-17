@@ -1,5 +1,7 @@
-var key = "a2810bc194384a049f6a7fb646d897ad"
-var OpenSecrets = require('./lib/opensecrets')(key);
+//var key = "a2810bc194384a049f6a7fb646d897ad"
+
+// Load credentials from .gitignore'd file
+require('./key.js');
 
 /*
 OpenSecrets.getLegislators('ME', function(error, results) {

@@ -2,6 +2,9 @@
 logs
 *.log
 
+# Credentials
+key.js
+
 # Runtime data
 pids
 *.pid
