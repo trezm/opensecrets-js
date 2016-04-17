@@ -3,7 +3,7 @@ logs
 *.log
 
 # Credentials
-key.js
+key.json
 
 # Runtime data
 pids

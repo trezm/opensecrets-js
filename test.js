@@ -1,8 +1,26 @@
-//var key = "a2810bc194384a049f6a7fb646d897ad"
 
-// Load credentials from .gitignore'd file
-require('./key.js');
+fs = require("fs")
 
+var fileName = "./key.json"
+// File looks like { "apiKey": "zzz"}
+
+// Load keys with error catching
+var config
+
+try {
+  config = require(fileName)
+}
+catch (err) {
+  config = {}
+  console.log("unable to read file '" + fileName + "': ", err)
+}
+
+// Echo out key to make sure it's loaded correctly
+//console.log(config.apiKey)
+
+//Create the client
+
+var OpenSecrets = require('./lib/opensecrets')(config.apiKey);
 /*
 OpenSecrets.getLegislators('ME', function(error, results) {
 	console.log('error:', error);
