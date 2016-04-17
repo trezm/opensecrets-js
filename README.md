@@ -5,6 +5,10 @@ A NodeJS library for the OpenSecrets.org API
 ### Installation
 `npm install opensecrets-js`
 
+### API key
+The library looks for your API credentials in the file 'key.JSON', which is expected to have the format
+`{ "apiKey": "XXX"}`
+
 ### Methods/Usage
 To use the library, you must include it:
 `var OpenSecrets = require('opensecrets-js');`
